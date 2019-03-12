@@ -4,7 +4,7 @@ sys.path.append('ExcelHandle.py');
 from ExcelHandle import ExcelHandle
 import datetime
 
-excelHandle=ExcelHandle('Debug/ExcelHandleTest.xlsx')
+excelHandle=ExcelHandle('sample/ExcelHandleTest.xlsx')
 data=excelHandle.readExcel()
 i = datetime.datetime.now()
 outFileName="Debug/ExcelHandleTest_res_%s%s%s.xls"%(i.year, i.month, i.day)
